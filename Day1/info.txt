@@ -1,0 +1,1 @@
+A web paage to select colors from all possible colors in rgb
