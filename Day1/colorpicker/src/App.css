@@ -1,9 +1,24 @@
 #Root {
-  height: 100vh;
+  cursor: url("dot.png"), progress;
+}
+#main {
+  height: 80vh;
   width: 100vw;
   cursor: url("dot.png"), progress;
 }
 
+#NavBar {
+  height: 5vh;
+  width: 100vw;
+  cursor: url("dot.png"), progress;
+}
+
+#footer {
+  height: 15vh;
+  width: 100vw;
+  cursor: url("dot.png"), progress;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 #inforow {
   position: absolute;
   bottom: 0%;
@@ -43,5 +58,12 @@
   height: 25px;
   border-radius: 50%;
   background: black;
+  cursor: url("dot.png"), progress;
+}
+
+a:hover {
+  cursor: url("dot.png"), progress;
+}
+a {
   cursor: url("dot.png"), progress;
 }
