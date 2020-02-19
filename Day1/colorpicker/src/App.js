@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 class App extends Component {
-  state = { start: false, R: 255, G: 255, B: 255 };
+  state = { start: false, R: 0, G: 0, B: 0 };
 
   render() {
     const sleep = seconds => {
@@ -10,19 +10,18 @@ class App extends Component {
     };
     document.onclick = async e => {
       if (!this.state.start) {
-        var i = 0;
-        for (i = 0; i < i + 10; i++) {
+        this.setState({ start: true });
+        while (this.state.start) {
           this.setState({
             R: Math.random() * 256,
             G: Math.random() * 256,
             B: Math.random() * 256
           });
-          console.log("camehere");
-          await sleep(7);
-          // setTimeout(() => {}, 50000);
-        }
 
-        // var rand3 = Math.random() * 256;
+          await sleep(2);
+        }
+      } else {
+        this.setState({ start: false });
       }
     };
     return (
@@ -30,16 +29,23 @@ class App extends Component {
         id="Root"
         style={{
           backgroundColor:
-            "RGB(" +
+            "RGBA(" +
             this.state.R +
             "," +
             this.state.G +
             "," +
             this.state.B +
-            ")"
+            ",0.8)"
         }}
       >
-        <div id="inforow">Click anywhere to start</div>
+        <div id="inforow">
+          <div className="container" style={{ paddingTop: "20px" }}>
+            <h4>
+              Click anywhere to start
+              <br /> Click again to stop
+            </h4>
+          </div>
+        </div>
       </div>
     );
   }

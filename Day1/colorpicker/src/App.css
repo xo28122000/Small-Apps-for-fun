@@ -4,8 +4,16 @@
 }
 
 #inforow {
-  padding-top: 10%;
+  position: absolute;
+  bottom: 0%;
+  padding-bottom: 5%;
+  left: 30%;
+  right: 30%;
+  background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
