@@ -7,12 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavLink
 } from "reactstrap";
 
 class App extends Component {
@@ -95,7 +90,7 @@ class App extends Component {
               expand="md"
               style={{ background: "RGBA(255,255,255,0.3)" }}
             >
-              <NavbarBrand>Colors</NavbarBrand>
+              <NavbarBrand>TRIPPP</NavbarBrand>
               <NavbarToggler onClick={toggleNav} />
               <Collapse isOpen={this.state.isopenNav} navbar>
                 <Nav className="mr-auto" navbar>

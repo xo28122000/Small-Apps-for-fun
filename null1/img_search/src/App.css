@@ -1,0 +1,25 @@
+#Root {
+}
+#NavBar {
+  height: 5vh;
+  width: 100vw;
+  color: white;
+}
+#body {
+  height: 90vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+#footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#searchInp {
+  position: absolute;
+  top: 40vh;
+  left: 20vh;
+  right: 20vh;
+}
