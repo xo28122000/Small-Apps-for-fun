@@ -94,7 +94,7 @@ class App extends Component {
     theCanvas.addEventListener("mousedown", e => {
       // setup all of the properties for your line on mousedown, not mousemove
       letsdraw = true;
-      ctx.strokeStyle = "blue";
+      ctx.strokeStyle = "white";
       ctx.lineWidth = this.state.strokeSize;
       ctx.lineCap = "round";
       ctx.beginPath();
@@ -136,7 +136,7 @@ class App extends Component {
           style={{ background: "RGBA(0,0,0,1)", color: "RGBA(255,255,255,1)" }}
         >
           <NavbarBrand style={{ color: "RGBA(255,255,255,1)" }}>
-            Web Paint
+            Paint
           </NavbarBrand>
           <NavbarToggler onClick={toggleNav} />
           <Collapse isOpen={this.state.isopenNav} navbar>
